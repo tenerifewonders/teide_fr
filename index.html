@@ -53,13 +53,7 @@
     const params = new URLSearchParams(window.location.search);
     let license = params.get('license');
 
-    // 🧪 MODO PRUEBA RÁPIDO: abrir con ?test=true omite el candado
-    if (params.get('test') === 'true') {
-      document.documentElement.style.display = '';
-      setTimeout(() => window.dispatchEvent(new Event('resize')), 100);
-      return;
-    }
-
+ 
     if (!license) {
       license = localStorage.getItem(`tw_license_${GUIDE_ID}`);
     }
