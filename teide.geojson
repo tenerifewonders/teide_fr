@@ -1,0 +1,118 @@
+{
+  "type": "FeatureCollection",
+  "name": "El Teide Étapes",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "1. Belvédère La Ruleta : La porte vers le monde perdu",
+        "audio": "https://xzymbvnljudyypdyuisf.supabase.co/storage/v1/object/public/teide_fr/1.mp3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.631272,
+          28.2230957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "2. Roque Cinchado : Le gardien du temps",
+        "audio": "https://xzymbvnljudyypdyuisf.supabase.co/storage/v1/object/public/teide_fr/2.mp3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.631667,
+          28.224722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "3. Formations rocheuses El Torrotito et El Burro : Là où la lave prend forme",
+        "audio": "https://xzymbvnljudyypdyuisf.supabase.co/storage/v1/object/public/teide_fr/3.mp3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.631498,
+          28.2252322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "4. Descente vers Ucanca : Sous la pluie d'étoiles",
+        "audio": "https://xzymbvnljudyypdyuisf.supabase.co/storage/v1/object/public/teide_fr/4.mp3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.63875,
+          28.2317777777778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "5. Llano de Ucanca : Là où la réalité devient incertaine",
+        "audio": "https://xzymbvnljudyypdyuisf.supabase.co/storage/v1/object/public/teide_fr/5.mp3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.6358888888889,
+          28.2249166666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "6. La Catedral : Le cœur minéral du volcan",
+        "audio": "https://xzymbvnljudyypdyuisf.supabase.co/storage/v1/object/public/teide_fr/6.mp3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.634853,
+          28.224346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "7. Remontée vers La Ruleta : La mer de nuages et l'ombre impossible",
+        "audio": "https://xzymbvnljudyypdyuisf.supabase.co/storage/v1/object/public/teide_fr/7.mp3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.632263,
+          28.22293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "8. Belvédère La Ruleta : Le cercle de feu et du temps",
+        "audio": "https://xzymbvnljudyypdyuisf.supabase.co/storage/v1/object/public/teide_fr/8.mp3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.631272,
+          28.2230957
+        ]
+      }
+    }
+  ]
+}
