@@ -53,7 +53,13 @@
     const params = new URLSearchParams(window.location.search);
     let license = params.get('license');
 
- 
+    // 🧪 MODO PRUEBA RÁPIDO: abrir con ?test=true omite el candado
+    if (params.get('test') === 'true') {
+      document.documentElement.style.display = '';
+      setTimeout(() => window.dispatchEvent(new Event('resize')), 100);
+      return;
+    }
+
     if (!license) {
       license = localStorage.getItem(`tw_license_${GUIDE_ID}`);
     }
@@ -240,14 +246,26 @@
       });
     });
 
-    map.locate({ setView: false });
+    let userMarker = null;
+
+    map.locate({
+      watch: true,
+      enableHighAccuracy: true,
+      maximumAge: 6000,
+      timeout: 10000
+    });
+
     map.on('locationfound', e => {
-      L.circleMarker(e.latlng, {
-        radius: 8,
-        color: "#007bff",
-        fillColor: "#3fa0ff",
-        fillOpacity: 0.8
-      }).addTo(map);
+      if (!userMarker) {
+        userMarker = L.circleMarker(e.latlng, {
+          radius: 8,
+          color: "#007bff",
+          fillColor: "#3fa0ff",
+          fillOpacity: 0.8
+        }).addTo(map);
+      } else {
+        userMarker.setLatLng(e.latlng);
+      }
     });
   </script>
 
